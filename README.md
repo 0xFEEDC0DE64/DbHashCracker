@@ -1,6 +1,8 @@
 # DbHashCracker
 A tool which creates a hash table in mysql to crack md5 hashes fast
 
+[![Build Status](https://travis-ci.org/0xFEEDC0DE64/DbHashCracker.svg?branch=master)](https://travis-ci.org/0xFEEDC0DE64/DbHashCracker) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/906fba8525f54077a1450a0a638b69c6)](https://www.codacy.com/app/0xFEEDC0DE64/DbHashCracker?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=0xFEEDC0DE64/DbHashCracker&amp;utm_campaign=Badge_Grade)
+
 Help output:
 
     ./hashcracker -h
@@ -56,7 +58,7 @@ Example run:
     13:39:32.001 [I] 0:00:08 | 3200/4740047104 (0.00%) | NOW 500/sec 2633:21:27 | AVG 400/sec 3291:41:49
     ^C
 
-# Building from source
+## Building from source
 This project can only be built as part of the project structure [DbSoftware](https://github.com/0xFEEDC0DE64/DbSoftware)
 
 ```Shell
@@ -69,5 +71,5 @@ cd build_DbSoftware
 qmake CONFIG+=ccache ../DbSoftware
 make -j$(nproc) sub-DbHashCracker
 make sub-DbHashCracker-install_subtargets
-./bin/databasetree
+./bin/hashcracker
 ```
