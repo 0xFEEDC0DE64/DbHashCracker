@@ -14,4 +14,4 @@ set(SOURCES
 
 add_executable(hashcracker ${HEADERS} ${SOURCES})
 
-target_link_libraries(hashcracker Qt5::Core Qt5::Sql)
+target_link_libraries(hashcracker stdc++ Qt5::Core Qt5::Sql)
